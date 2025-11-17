@@ -1,52 +1,54 @@
-/* HEADER */
+
 header {
     font-family: "Doto", sans-serif;
-    font-size: 83px;
+    font-size: 50px;
     width: 100%;
     background: black;
     color: white;
     padding: 20px 0;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 900;
 }
 
-body {
-
-    /* Create repeating text background using SVG */
+.wallpaper {
+    /* moved from body so it sits behind header */
     background-image: url("data:image/svg+xml;utf8,\
-        <svg xmlns='http://www.w3.org/2000/svg' width='300' height='120'>\
-            <text x='0' y='30' font-size='128' font-family='Doto' fill='black'>DOTO DISPLAY</text>\
+        <svg xmlns='http://www.w3.org/2000/svg' width='100' height='80'>\
+            <text x='0' y='50' font-size='40' font-family='Doto' fill='black'>DOTO%20DISPLAY</text>\
         </svg>");
     background-repeat: repeat;
-    background-size: 100px 100px; /* adjust for spacing */
-}
-
-
-header h1 {
-    font-family: "Doto", sans-serif;
-    margin: 0;
-    font-size: 28px;
-    letter-spacing: 2px;
+    background-size: 200px 80px;
+    background-position: 0 0;
+    min-height: 100vh;
 }
 
 nav {
     margin-top: 20px;
-    font-size: 70px;
+    font-size: 40px;
+    font-weight: bold;
     font-family: "Doto", sans-serif;
-    text-align: right;
+    text-align: center;
 }
 
-nav a {
-    font-family: "Doto", sans-serif;
-    text-decoration: none;
-    color: white;
-    margin: 0 30px;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
 
 .black {
     background-color: #000000;
-    padding: 90px 0px;
-    padding-top: 100px;
 }
+.logo { font-family: "Doto", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 900;}
+
+    .nav1{
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "Doto", sans-serif;
+        text-align: center;
+    }
