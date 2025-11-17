@@ -1,0 +1,41 @@
+
+/* HEADER */
+header {
+    font-family: "Doto", sans-serif;
+    font-size: 83px;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: "Doto", sans-serif;
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 20px;
+     font-family: "Doto", sans-serif;
+     text-align: center;
+}
+
+nav a {
+     font-family: "Doto", sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.black {
+    background-color: #000000;
+    padding: 90px 0px;
+    padding-top: 100px;
+}
+
