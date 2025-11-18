@@ -283,3 +283,14 @@ main {
 
 /* right content column */
 .content { padding: 0 10px; }
+
+.right-box {
+
+    float: right;
+    width: 320px;            /* change as needed */
+    margin: 20px 0 20px 40px;/* space to the left so main text doesn't touch */
+    padding: 20px;
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+}
