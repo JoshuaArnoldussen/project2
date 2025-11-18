@@ -1,6 +1,66 @@
 html, body {
     height: 100%;
 }
+h1 {
+    font-family: "Doto", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    top : 100px;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+h2 {
+    font-family: "Doto", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+h3 {
+    font-family: "Doto", sans-serif;
+    font-size: 40px;
+    width: 100%;
+    justify-content: right;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+p {
+    font-family: "Doto", semiBold;
+    font-size: 48px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: left;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+.p2 {
+    font-family: "Doto", semiBold;
+    font-size: 48px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: right;
+    box-sizing: border-box;
+    font-weight: 900;
+}
 header {
     font-family: "Doto", sans-serif;
     font-size: 50px;
@@ -145,3 +205,35 @@ nav {
     background-position: 0 0;
     min-height: 100vh;
 }
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 320px 1fr; /* left column width, main fills rest */
+    gap: 40px;
+    align-items: start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* left boxed sidebar */
+.left-box {
+    background: #000;              /* black box like your design */
+    color: #fff;
+    padding: 20px;
+    border: 4px solid #0a4cff;     /* blue border — adjust color */
+    box-sizing: border-box;
+    font-family: "Doto", sans-serif;
+    font-size: 20px;               /* adjust for desired size */
+    line-height: 1.2;
+    overflow-y: auto;              /* scroll if content is tall */
+    max-height: calc(100vh - 160px); /* leave room for header/nav; tweak as needed */
+    white-space: pre-wrap;         /* preserves line breaks if any */
+}
+
+/* optional: make text inside look like your example (underlined links, spacing) */
+.left-box a { color: #2ca0ff; text-decoration: underline; }
+.sidebar-text { margin: 0; }
+
+/* right content column */
+.content { padding: 0 10px; }
