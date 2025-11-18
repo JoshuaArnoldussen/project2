@@ -12,6 +12,13 @@ h1 {
     box-sizing: border-box;
     font-weight: 900;
 }
+main .content h3 {
+    text-align: right;
+    margin: 0 0 20px 0; /* adjust spacing */
+    /* optional fine-tuning */
+    font-size: 40px;
+    line-height: 1.1;
+}
 h2 {
     font-family: "Doto", sans-serif;
     font-size: 50px;
@@ -24,16 +31,48 @@ h2 {
     box-sizing: border-box;
     font-weight: 900;
 }
+.content {
+    background: #fff;
+    border: 4px solid #0a4cff;   /* blue border like your mock */
+    padding: 28px;
+    box-sizing: border-box;
+    color: #111;
+    font-family: "Doto", sans-serif;
+    max-width: 720px;            /* control box width */
+    align-self: start;           /* keep box at top of grid row */
+    box-shadow: 0 0 0 2px rgba(10,76,255,0.06) inset;
+}
+
+/* override global p rules inside the content box */
+.content p,
+.content .p2 {
+    color: #111 !important;
+    font-size: 16px;        /* tweak to taste (13–18px) */
+    line-height: 1.6;
+    margin: 0 0 1.1rem 0;
+    text-align: left;
+    background: transparent;
+}
+
+/* optional: spacing for headings inside the right column */
+.content h2,
+.content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: right; /* keep your subtitle right aligned if desired */
+}
+
+/* ...existing code... */
 h3 {
     font-family: "Doto", sans-serif;
     font-size: 40px;
     width: 100%;
-    justify-content: right;
+    justify-self: end;
     margin: 0;
     padding: 20px 0;
     color: rgb(0, 0, 0);
     padding: 20px 0;
-    text-align: center;
+    text-align: right;
     box-sizing: border-box;
     font-weight: 900;
 }
@@ -50,8 +89,8 @@ p {
     font-weight: 900;
 }
 .p2 {
-    font-family: "Doto", semiBold;
-    font-size: 48px;
+    font-family: "Doto", sans-serif;
+    font-size: 13px;
     width: 100%;
     margin: 0;
     padding: 20px 0;
@@ -59,8 +98,15 @@ p {
     padding: 20px 0;
     text-align: right;
     box-sizing: border-box;
-    font-weight: 900;
+    font-weight: 500;
 }
+.main .content .p2 {
+    color: #111; /* or #000 */
+}
+
+/* ensure left-box keeps white text (if needed) */
+.left-box { color: #fff; }
+
 header {
     font-family: "Doto", sans-serif;
     font-size: 50px;
