@@ -31,7 +31,7 @@ main {
             <text x='0' y='50' font-size='40' font-family='Doto' fill='black'>DOTO%20DISPLAY</text>\
         </svg>");
     background-repeat: repeat;
-    background-size: 300px 80px;
+    background-size: 30px 80px;
     background-position: 0 0;
     min-height: 100vh;
 }
@@ -117,5 +117,31 @@ nav {
     max-width: 90%;
     line-height: 1;
 }
+.charBold {
+    font-weight: 900;
+ writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    top: 200px;
+    display: inline-block;
+    font-family: "Doto", sans-serif;
+    font-size: 10vw;
+    line-height: 1;
+}
 
-
+.charBold.rotated {
+    display: inline-block;
+    transform: rotate(90deg); /* use -90deg for counter-clockwise */
+    transform-origin: center center;
+}
+.wallpaperChar {
+    /* moved from body so it sits behind header */
+    background-image: url("data:image/svg+xml;utf8,\
+        <svg xmlns='http://www.w3.org/2000/svg' width='20' height='90'>\
+            <text x='0' y='60' font-size='20' font-family='Doto' fill='black'>~</text>\
+        </svg>");
+    background-repeat: repeat;
+    background-size: 30px 80px;
+    background-position: 0 0;
+    min-height: 100vh;
+}
